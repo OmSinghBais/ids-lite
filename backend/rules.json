@@ -1,0 +1,37 @@
+[
+    {
+        "id": "R001",
+        "name": "SQL Injection Attempt",
+        "pattern": "(UNION SELECT|DROP TABLE|OR 1=1)",
+        "severity": "high",
+        "action": "block"
+    },
+    {
+        "id": "R002",
+        "name": "XSS Payload",
+        "pattern": "<script>|javascript:",
+        "severity": "medium",
+        "action": "alert"
+    },
+    {
+        "id": "R003",
+        "name": "Port Scanning Activity",
+        "pattern": "Nmap|masscan|zmap",
+        "severity": "medium",
+        "action": "alert"
+    },
+    {
+        "id": "R004",
+        "name": "Directory Traversal",
+        "pattern": "\\.\\./\\.\\./",
+        "severity": "high",
+        "action": "block"
+    },
+    {
+        "id": "R005",
+        "name": "Suspicious User Agent",
+        "pattern": "(curl|wget|python-requests)",
+        "severity": "low",
+        "action": "alert"
+    }
+]
