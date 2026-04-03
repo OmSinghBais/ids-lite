@@ -4,3 +4,11 @@ dist/
 backend/venv/
 backend/__pycache__/
 *.pyc
+
+# Ignore other environments, DBs, and logs
+venv/
+backend/venv312/
+*.db
+backend_log.txt
+.DS_Store
+backend/.DS_Store

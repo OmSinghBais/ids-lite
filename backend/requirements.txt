@@ -1,0 +1,16 @@
+# Web framework
+fastapi
+uvicorn[standard]
+pydantic
+
+# Database
+sqlalchemy
+aiosqlite
+greenlet
+
+# ML / Data
+scikit-learn
+numpy
+
+# Packet capture (only needed for real mode, not synthetic)
+scapy
